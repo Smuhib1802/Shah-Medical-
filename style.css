@@ -242,7 +242,7 @@ center h2{
 
 
 /* ================= MOBILE RESPONSIVENESS ================= */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
 
     body {
         font-size: 14px;
@@ -282,6 +282,7 @@ center h2{
         margin: 10px 0 !important;
     }
 
+
     .list-info {
         font-size: 14px !important;
         margin: 5px 0 !important;
@@ -301,7 +302,7 @@ center h2{
     }
 
     table td, table th {
-        padding: 6px 4px !important;
+        padding: 4px 6px !important;
         font-size: 12px !important;
         text-align: center !important;
     }
@@ -310,11 +311,22 @@ center h2{
         font-size: 12px !important;
         padding: 6px 4px !important;
     }
+    .heading1 td{
+        max-width: 100%; !important
+    }
 
     .item-row td {
-        font-size: 12px !important;
-        padding: 4px 2px !important;
+        font-size: 10px !important;
+        padding: 2px 1px !important;
     }
+       
+    .qty-input {
+    width: 50px;
+    padding: 2px;
+    border-radius: 20px;
+    border: 1px solid #3e3ef8;
+    text-align: center;
+}
 
     .item-row:nth-child(even) {
         background: #Dff0ff !important;
@@ -374,10 +386,28 @@ center h2{
         text-align: center !important;
         margin-top: 20px !important;
     }
-
-    /* Optional: hide less important table columns for mobile */
-    .heading td:nth-child(3), .heading td:nth-child(5),
-    .item-row td:nth-child(3), .item-row td:nth-child(5) {
-        display: none !important;
+    .search-box i{
+        display: none;
     }
+
+    /* No columns hidden: all table columns including tp and ext% are visible */
+}
+
+@media screen and (max-width:419px){
+      table td, table th {
+        padding: 4px 6px !important;
+        font-size: 10px !important;
+        text-align: center !important;
+    }
+    .item-row td {
+        font-size: 8px !important;
+        padding: 2px 1px !important;
+    }
+    .qty-input {
+    width: 40px;
+    padding: 1px;
+    border-radius: 20px;
+    border: 1px solid #3e3ef8;
+    text-align: center;
+}
 }
