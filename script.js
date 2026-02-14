@@ -2,6 +2,7 @@ const products = [
     {
        company: "All Products",
         items: [
+             { serialno: "1", name: "ACEFYL COUGH SYP", tp: "15%", ext: "14%", bonus: "", tax: "0.00" },
             { serialno: "2", name: "ACEFYL GREEN SYP", tp: "15%", ext: "5%", bonus: "", tax: "0.00" },
             { serialno: "3", name: "HYDROLINE SYP", tp: "13%", ext: "4%", bonus: "", tax: "0.00" },
             { serialno: "4", name: "HYDROLINE DM SYP", tp: "13%", ext: "0%", bonus: "", tax: "0.00" },
