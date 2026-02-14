@@ -33,6 +33,17 @@ table {
     background: linear-gradient(rgb(150,185,255), rgb(51,23,215), black);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-bottom: 25px;
+}
+
+.medical-heading {
+    background: linear-gradient(rgb(55,147,251), #1111ff); /* Blue background */
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px 0;
+    letter-spacing: 1px;
 }
 
 .list-info {
@@ -51,22 +62,30 @@ table {
     text-align: center;
 }
 .heading1{
-    background: linear-gradient(rgb(55,147,251), #1111ff);
+     background: linear-gradient(rgb(55,147,251), #1111ff); /* Blue background */
     color: white;
-    font-weight: bold;
     text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px 0;
+    letter-spacing: 1px;
 }
-.heading1 td{
+/* .heading1 td{
     padding: 12px 20px;
     font-weight: bolder;
     font-size: large;
     max-width: 100%;
+     
 
-}
+} */
 
 .heading td {
     padding: 12px 20px;
     font-weight: bolder;
+}
+
+#heading{
+     max-width: 1100px;
 }
 
 .search-section {
@@ -266,22 +285,29 @@ center h2{
         display: block;
         margin: 30px auto;
     }
-
+    
     .title-section h2, .title-section p {
         font-size: 18px !important;
         margin: 20px 0 !important;
         color: white !important;
+        
     }
 
     .main-title {
         font-size: 28px !important;
         text-align: center !important;
-        background: linear-gradient(rgb(150,185,255), rgb(51,23,215), black);
+        background: linear-gradient(rgb(108, 157, 255), rgb(72, 139, 255), rgb(13, 41, 165),black, black);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin: 20px 0 !important;
+        padding-bottom: 10px !important;
+        
     }
 
+    .medical-heading {
+    font-size: 14px !important;
+    padding: 12px 0 !important;
+}
 
     .list-info {
         font-size: 14px !important;
@@ -306,12 +332,13 @@ center h2{
         text-align: center !important;
     }
     
-    .heading, .heading1 {
+    .heading {
         font-size: 12px !important;
         padding: 6px 4px !important;
     }
-    .heading1 td{
-        max-width: 100%; !important
+    .heading1{
+         font-size: 13px !important;
+    padding: 10px 0 !important;
     }
 
     .item-row td {

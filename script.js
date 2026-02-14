@@ -1,15 +1,15 @@
 const products = [
     {
-        company: "SHAH MEDICAL LIST",
+       company: "All Products",
         items: [
-            { serialno: "1", name: "ACEFYL COUGH SYP", tp: "13%", ext: "14%", bonus: "", tax: "0.00" },
-            { serialno: "2", name: "ACEFYL GREEN SYP", tp: "13%", ext: "5%", bonus: "", tax: "0.00" },
+            { serialno: "2", name: "ACEFYL GREEN SYP", tp: "15%", ext: "5%", bonus: "", tax: "0.00" },
             { serialno: "3", name: "HYDROLINE SYP", tp: "13%", ext: "4%", bonus: "", tax: "0.00" },
             { serialno: "4", name: "HYDROLINE DM SYP", tp: "13%", ext: "0%", bonus: "", tax: "0.00" },
             { serialno: "5", name: "DOLLOR SYP", tp: "13%", ext: "15%", bonus: "", tax: "0.00" },
             { serialno: "6", name: "DOLLOR DS SYP", tp: "13%", ext: "15%", bonus: "", tax: "0.00" },
             { serialno: "7", name: "PULMONOL SYP", tp: "13%", ext: "15%", bonus: "", tax: "0.00" },
             { serialno: "8", name: "CIPLET 125 SYP", tp: "13%", ext: "15%", bonus: "", tax: "0.00" },
+            { serialno: "1", name: "ACEFYL COUGH SYP", tp: "13%", ext: "14%", bonus: "", tax: "0.00" },
             { serialno: "9", name: "CIPLET 250 SYP", tp: "13%", ext: "15%", bonus: "", tax: "0.00" },
             { serialno: "10", name: "CEBOSH PLAN SYP", tp: "13%", ext: "24%", bonus: "", tax: "0.00" },
             { serialno: "11", name: "CEBOSH DS SYP", tp: "13%", ext: "24%", bonus: "", tax: "0.00" },
@@ -265,8 +265,8 @@ const products = [
             { serialno: "239", name: "BRIAX 20MG TAB", tp: "13%", ext: "12%", bonus: "", tax: "0.00" },
             { serialno: "240", name: "QUMIC 250/500 TAB", tp: "13%", ext: "17%", bonus: "", tax: "0.00" },
         ]
-
-
+    
+    
     },
     {
         company: "INJ",
@@ -366,6 +366,7 @@ const products = [
     }
 
 ];
+products.flatMap(c => c.items).forEach(i => i.tp === "13%" && (i.tp = "15%"));
 
 
 const table = document.getElementById("productTable");
@@ -396,6 +397,8 @@ products.forEach(group => {
         table.appendChild(row);
     });
 });
+
+
 
 document.getElementById("searchInput").addEventListener("keyup", function () {
     const value = this.value.toLowerCase();
@@ -430,8 +433,8 @@ function sendWhatsApp() {
             hasOrder = true;
             const serialno = row.cells[0].innerText;
             const itemName = row.cells[1].innerText;
-            const tp = row.cells[5].innerText;
-            message += `${qty} x ${itemName} (SerialNo: ${serialno}) - Price: ${tp}\n`;
+            const ext = row.cells[4].innerText;
+            message += `${qty} x ${itemName} (SNo: ${serialno}) - (Ext: ${ext})\n`;
         }
     });
 
