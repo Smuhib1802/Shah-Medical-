@@ -264,12 +264,12 @@ center h2{
         max-width: 250px;
         height: auto;
         display: block;
-        margin: 0 auto;
+        margin: 30px auto;
     }
 
     .title-section h2, .title-section p {
         font-size: 18px !important;
-        margin: 5px 0 !important;
+        margin: 20px 0 !important;
         color: white !important;
     }
 
@@ -279,7 +279,7 @@ center h2{
         background: linear-gradient(rgb(150,185,255), rgb(51,23,215), black);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin: 10px 0 !important;
+        margin: 20px 0 !important;
     }
 
 
@@ -288,7 +288,6 @@ center h2{
         margin: 5px 0 !important;
         color: white !important;
     }
-
     .right {
         text-align: right !important;
         font-size: 14px !important;
@@ -306,7 +305,7 @@ center h2{
         font-size: 12px !important;
         text-align: center !important;
     }
-
+    
     .heading, .heading1 {
         font-size: 12px !important;
         padding: 6px 4px !important;
