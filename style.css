@@ -389,6 +389,10 @@ center h2{
     .search-box i{
         display: none;
     }
+    .qty-input::placeholder {
+    font-size: 10px;
+    color: #666;     /* optional: placeholder color */
+}
 
     /* No columns hidden: all table columns including tp and ext% are visible */
 }
@@ -405,9 +409,13 @@ center h2{
     }
     .qty-input {
     width: 40px;
-    padding: 1px;
+    padding: 2px;
     border-radius: 20px;
     border: 1px solid #3e3ef8;
     text-align: center;
+}
+.qty-input::placeholder {
+    font-size: 9px;
+    color: #666;     /* optional: placeholder color */
 }
 }
