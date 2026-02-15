@@ -11,7 +11,6 @@ const products = [
             { serialno: "6", name: "DOLLOR DS SYP", tp: "13%", ext: "15%", bonus: "", tax: "0.00" },
             { serialno: "7", name: "PULMONOL SYP", tp: "13%", ext: "15%", bonus: "", tax: "0.00" },
             { serialno: "8", name: "CIPLET 125 SYP", tp: "13%", ext: "15%", bonus: "", tax: "0.00" },
-            { serialno: "1", name: "ACEFYL COUGH SYP", tp: "13%", ext: "14%", bonus: "", tax: "0.00" },
             { serialno: "9", name: "CIPLET 250 SYP", tp: "13%", ext: "15%", bonus: "", tax: "0.00" },
             { serialno: "10", name: "CEBOSH PLAN SYP", tp: "13%", ext: "24%", bonus: "", tax: "0.00" },
             { serialno: "11", name: "CEBOSH DS SYP", tp: "13%", ext: "24%", bonus: "", tax: "0.00" },
@@ -443,7 +442,7 @@ function sendWhatsApp() {
             const serialno = row.cells[0].innerText;
             const itemName = row.cells[1].innerText;
             const ext = row.cells[4].innerText;
-            message += `${qty} x ${itemName} (SNo: ${serialno}) - (Ext: ${ext})\n`;
+            message += `${qty} x ${itemName} (SNo: ${serialno}, ${ext})\n`;
         }
     });
 
@@ -452,7 +451,7 @@ function sendWhatsApp() {
         return;
     }
 
-    const myNumber = "923180107470"; // Replace with your WhatsApp number
+    const myNumber = "923120817131"; // Replace with your WhatsApp number
     const whatsappURL = `https://wa.me/${myNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, "_blank");
 }
