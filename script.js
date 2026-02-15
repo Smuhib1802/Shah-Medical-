@@ -1,9 +1,10 @@
 const products = [
     {
-       company: "All Products",
+        company: "All Products",
+        company: "SYRUPS",
         items: [
-             { serialno: "1", name: "ACEFYL COUGH SYP", tp: "15%", ext: "14%", bonus: "", tax: "0.00" },
-            { serialno: "2", name: "ACEFYL GREEN SYP", tp: "15%", ext: "5%", bonus: "", tax: "0.00" },
+            { serialno: "1", name: "ACEFYL COUGH SYP", tp: "13%", ext: "14%", bonus: "", tax: "0.00" },
+            { serialno: "2", name: "ACEFYL GREEN SYP", tp: "13%", ext: "5%", bonus: "", tax: "0.00" },
             { serialno: "3", name: "HYDROLINE SYP", tp: "13%", ext: "4%", bonus: "", tax: "0.00" },
             { serialno: "4", name: "HYDROLINE DM SYP", tp: "13%", ext: "0%", bonus: "", tax: "0.00" },
             { serialno: "5", name: "DOLLOR SYP", tp: "13%", ext: "15%", bonus: "", tax: "0.00" },
@@ -51,7 +52,9 @@ const products = [
             { serialno: "43", name: "DR KOFF SYP", tp: "13%", ext: "10%", bonus: "", tax: "0.00" },
             { serialno: "44", name: "RETUS COUGH SYP", tp: "13%", ext: "10%", bonus: "", tax: "0.00" },
             { serialno: "45", name: "OSO D SYP", tp: "13%", ext: "5%", bonus: "", tax: "0.00" },
-            { serialno: "46", name: "MAXPAN 100/200 SYP", tp: "13%", ext: "23%", bonus: "", tax: "0.00" },
+            { serialno: "46", name: "MAXPAN 100 SYP", tp: "13%", ext: "23%", bonus: "", tax: "0.00" },
+            { serialno: "46", name: "MAXPAN 200 SYP", tp: "13%", ext: "23%", bonus: "", tax: "0.00" },
+
             { serialno: "47", name: "CALAMOX PLAN/DS", tp: "13%", ext: "5%", bonus: "", tax: "0.00" },
             { serialno: "48", name: "VOMILUX SYP", tp: "13%", ext: "5%", bonus: "", tax: "0.00" },
             { serialno: "49", name: "PROSPAN SYP", tp: "13%", ext: "5%", bonus: "", tax: "0.00" },
@@ -89,7 +92,11 @@ const products = [
             { serialno: "78", name: "EFROXIL SYP", tp: "13%", ext: "15%", bonus: "", tax: "0.00" },
             { serialno: "79", name: "CIBCOS IV SYP", tp: "13%", ext: "17%", bonus: "", tax: "0.00" },
             { serialno: "80", name: "PLAZO SYP", tp: "13%", ext: "10%", bonus: "", tax: "0.00" },
-
+        ]
+        },
+        {
+            company: "TAB/CAP",
+            items: [
             { serialno: "81", name: "AV-SARTAN 5/80", tp: "13%", ext: "12%", bonus: "", tax: "0.00" },
             { serialno: "82", name: "AV-SARTAN 5/160", tp: "13%", ext: "12%", bonus: "", tax: "0.00" },
             { serialno: "83", name: "AV-SARTAN 10/160", tp: "13%", ext: "12%", bonus: "", tax: "0.00" },
@@ -266,8 +273,8 @@ const products = [
             { serialno: "239", name: "BRIAX 20MG TAB", tp: "13%", ext: "12%", bonus: "", tax: "0.00" },
             { serialno: "240", name: "QUMIC 250/500 TAB", tp: "13%", ext: "17%", bonus: "", tax: "0.00" },
         ]
-    
-    
+
+
     },
     {
         company: "INJ",
@@ -363,6 +370,7 @@ const products = [
             { serialno: "314", name: "FASTUM GEL", tp: "13%", ext: "15%", bonus: "", tax: "0.00" },
             { serialno: "315", name: "PROVATE G/S LOTION", tp: "13%", ext: "6%", bonus: "", tax: "0.00" },
             { serialno: "316", name: "CUTIS LOTION", tp: "13%", ext: "6%", bonus: "", tax: "0.00" }
+
         ]
     }
 
